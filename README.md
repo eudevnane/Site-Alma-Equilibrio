@@ -1,6 +1,5 @@
 # Alma Equilíbrio
 
-![Alma Equilíbrio](https://via.placeholder.com/800x200?text=Logo+do+Projeto+Alma+Equil%C3%ADbrio)
 
 Bem-vindo ao repositório do **Alma Equilíbrio**, uma aplicação web desenvolvida com **Flask** para apresentar produtos e serviços de bem-estar, como velas, mandalas energéticas e produtos fitoterápicos. Nosso objetivo é proporcionar equilíbrio e tranquilidade por meio de uma interface intuitiva e agradável.
 
