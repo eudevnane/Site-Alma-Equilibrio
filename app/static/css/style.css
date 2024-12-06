@@ -1,5 +1,5 @@
-/* Reset básico */
-body {
+/* Reset básico, use o body para definir estilos gerais da página */
+body {  
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -9,14 +9,14 @@ body {
     line-height: 1.6;
 }
 
-/* Estilo do cabeçalho */
+/* Estilo do cabeçalho, Use o header para criar cabeçalhos com gradientes */
 header {
     background: linear-gradient(to right, #50133A, #f4b9b8);
     color: rgb(255, 248, 248);
     padding: 20px 0;
     margin-bottom: 20px;
 }
-
+/* Estilize elementos específicos como h1 e decription */
 header h1 {
     margin: 0;
     font-size: 2.5em;
@@ -47,4 +47,13 @@ button {
 /* Efeito hover no botão */
 button:hover {
     background-color: #feb47b;
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333  
+    }
+    nav a {
+      text-decoration: underline;  
+    }
 }

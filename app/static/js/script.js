@@ -12,8 +12,8 @@ button.addEventListener('click', () => {
     document.body.style.transition = "background-color 0.5s ease";
 
     // Alterar estilo do botão
-    button.style.backgroundColor = "#4caf50";
-    button.style.color = "white";
+    button.style.backgroundColor = "#f4b9b8";
+    button.style.color = "3543855";
     button.style.border = "none";
     button.style.padding = "10px 20px";
     button.style.borderRadius = "5px";
