@@ -3,25 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos - Alma Equilíbrio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+    <!-- Barra lateral com menu interativo -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+            <li><a href="{{ url_for('produtos') }}">Produtos</a></li>
+            <li><a href="{{ url_for('carrinho') }}">Carrinho</a></li>
+            <li><a href="{{ url_for('contato') }}">Contato</a></li>
+        </ul>
     <header>
-        <nav>
-            <a href="home.html">Home</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="produtos.html">Produtos</a>
-            <a href="carrinho.html">Carrinho</a>
-            <a href="contato.html">Contato</a>
-        </nav>
-    </header>
-    <main>
         <h1>Nossos Produtos</h1>
-        <p>Conheça nossa linha de produtos para equilíbrio e bem-estar.</p>
+    </header>
+    <main class="produtos">
+        <div class="produto-item">
+            <img src="{{ url_for('static', filename='images/produto1.jpg') }}" alt="Produto 1">
+            <h2>Produto 1</h2>
+            <p>Descrição breve do produto 1.</p>
+            <p><strong>Preço: R$ 50,00</strong></p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto-item">
+            <img src="{{ url_for('static', filename='images/produto2.jpg') }}" alt="Produto 2">
+            <h2>Produto 2</h2>
+            <p>Descrição breve do produto 2.</p>
+            <p><strong>Preço: R$ 30,00</strong></p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto-item">
+            <img src="{{ url_for('static', filename='images/produto3.jpg') }}" alt="Produto 3">
+            <h2>Produto 3</h2>
+            <p>Descrição breve do produto 3.</p>
+            <p><strong>Preço: R$ 40,00</strong></p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2024 Alma Equilíbrio - Todos os direitos reservados.</p>
+        <p>&copy; 2024 Alma Equilíbrio</p>
     </footer>
 </body>
 </html>

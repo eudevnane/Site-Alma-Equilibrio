@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alma Equilíbrio</title>
-    <!-- Link para o CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Alma Equilíbrio - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <nav>
-        <a href="{{ url_for('sobre')}}">sobre</a>
-        <a href="{{ url_for('produtos')}}">produtos</a>
-        <a href="{{ url_for('carrinho')}}">carrinho</a>
-        <a href="{{ url_for('contato')}}">contato</a>
-    <header>
-        <h1>Bem-vindo à Alma Equilíbrio!</h1>
-    </header>
+    <!-- Barra lateral com menu interativo -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('sobre') }}">Sobre</a></li>
+            <li><a href="{{ url_for('produtos') }}">Produtos</a></li>
+            <li><a href="{{ url_for('carrinho') }}">Carrinho</a></li>
+            <li><a href="{{ url_for('contato') }}">Contato</a></li>
+        </ul>
+    </div>
     
-    <main>
-        <p id="description">Aqui você encontra equilíbrio e bem-estar através de nossos produtos.</p>
-        <button id="magicButton">Clique aqui para transformar a página</button>
-    </main>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Bem-vindo à Alma Equilíbrio</h1>
+    </header>
 
-    <!-- Adicionando um script JavaScript -->
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <!-- Conteúdo Principal -->
+    <div class="main-content">
+        <p>Descubra nossos produtos e serviços para o equilíbrio do corpo e da mente.</p>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Alma Equilíbrio. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
+

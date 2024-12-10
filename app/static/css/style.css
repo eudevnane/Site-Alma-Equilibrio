@@ -1,59 +1,107 @@
-/* Reset básico, use o body para definir estilos gerais da página */
-body {  
+/* Estilos globais (para todas as páginas) */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
     background-color: #fff;
     color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #50133A, #f4b9b8);
+    color: white;
+    padding: 20px;
     text-align: center;
+}
+
+footer {
+    background-color: #50133A;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos específicos para a home */
+.home-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos específicos para a página "Sobre" */
+.sobre-header {
+    background-color: #f4b9b8;
+    color: #50133A;
+    padding: 30px;
+    text-align: center;
+}
+
+.sobre-content {
+    padding: 20px;
+    font-size: 1.1em;
     line-height: 1.6;
 }
 
-/* Estilo do cabeçalho, Use o header para criar cabeçalhos com gradientes */
-header {
-    background: linear-gradient(to right, #50133A, #f4b9b8);
-    color: rgb(255, 248, 248);
-    padding: 20px 0;
-    margin-bottom: 20px;
-}
-/* Estilize elementos específicos como h1 e decription */
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-/* Estilo principal */
-main {
+/* Estilos específicos para a página "Carrinho" */
+.carrinho {
     padding: 20px;
-}
-
-#description {
     font-size: 1.2em;
-    margin: 20px 0;
+    color: #50133A;
 }
 
-/* Estilo do botão */
-button {
-    background-color: #f4b9b8;
-    color: #50133A(238, 230, 230);
-    border: none;
-    padding: 10px 20px;
+.carrinho-item {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+/* ======================================
+   Estilos para a Página de Produtos
+   ====================================== */
+   .produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.produto-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+    background-color: #f9f9f9;
+}
+
+.produto-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.produto-item h2 {
+    font-size: 1.5em;
+    color: #50133A;
+}
+
+.produto-item p {
     font-size: 1em;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    margin: 10px 0;
 }
 
-/* Efeito hover no botão */
-button:hover {
-    background-color: #feb47b;
+.produto-item button {
+    padding: 10px 15px;
+    background-color: #50133A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #333  
-    }
-    nav a {
-      text-decoration: underline;  
-    }
+.produto-item button:hover {
+    background-color: #f4b9b8;
+    color: #50133A;
 }
